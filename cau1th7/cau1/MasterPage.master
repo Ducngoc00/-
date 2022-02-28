@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ register src="~/ucFooter.ascx" tagprefix="uc1" tagname="ucFooter" %>
+<%@ register src="~/ucMenu.ascx" tagprefix="uc1" tagname="ucMenu" %>
+<%@ register src="~/ucLeft.ascx" tagprefix="uc1" tagname="ucLeft" %>
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Câu 1</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Style.css" rel="stylesheet" />
+</head>
+<body>
+        <table class="main">
+            <tr>
+                <td class="nabar" colspan="2">
+                    <uc1:ucmenu runat="server" id="ucMenu" />
+                </td>
+            </tr>
+            <tr>
+                <td class="li">Giới thiệu</td>
+                <td rowspan="6">
+                    <form id="form1" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    </form>
+                </td>
+            </tr>
+            <uc1:ucleft runat="server" id="ucLeft" />
+            <tr>
+                <td class="footer" colspan="2">
+                    <uc1:ucfooter runat="server" id="ucFooter" />
+                </td>
+            </tr>
+        </table>
+</body>
+</html>

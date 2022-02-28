@@ -1,0 +1,42 @@
+﻿body {
+}
+.main{
+    width: 100%;
+    height:400px;
+}
+.nabar{
+    background-color:gold;
+    color: red;
+    font-weight:bold;
+}
+.footer{
+    height: 40px;
+    text-align:center;
+    background-color: gold;
+}
+.menu {
+    text-decoration: none;
+    list-style: none;
+    
+}
+.li {
+    width:20%;
+    border: 1px solid #cb7878;
+    text-align:center;
+    font-weight: bold;
+    font-size:18px;
+    color: forestgreen;
+}
+.nabar_1{
+    display:flex;
+    justify-content:space-between;
+}
+.noidung{
+    height:50px;
+    width:100px;
+    border:1px solid black;
+}
+.login{
+    text-decoration: none;
+    color: red;
+}
